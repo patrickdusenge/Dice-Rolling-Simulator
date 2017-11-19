@@ -1,0 +1,21 @@
+import random
+
+print("Welcome to Dice Rolling Simulator \n")
+
+rand = random.randint(1, 6)
+print("Dice Roll Number: " + str(rand))
+
+rollAgain = str(input("Want to roll again? (yes or no): "))
+
+while rollAgain.lower() == "yes":
+    newRand = random.randint(1, 6)
+    print("Dice Roll Number: " + str(newRand))
+
+    rollAgain = str(input("Want to roll again? (yes or no): "))
+
+if rollAgain.lower() == "no":
+    print("Goodbye, the until next time")
+
+
+
+
